@@ -14,8 +14,8 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 80vh;
-        max-width: 80vw;
+        height: 90vh;
+        max-width: 100vw;
     }
     * {
       font-size: 1.3rem;
@@ -41,7 +41,7 @@
       height: 55px;
       width: 55px;
       color: white;
-      background-color: gray;
+      background-color: rgb(93, 93, 93);
       border: none;
       border-radius: 80px;
     }
@@ -72,26 +72,24 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 0;
 }
 
-/* Hide the spinners in Firefox */
-input[type="number"] {
-    -moz-appearance: textfield;
-}
-
     .op{
         background-color: orange;
     }
     .isequal{
         background-color: orange;
     }
+    .tp{
+    background-color: rgb(165, 165, 165);
+}
   </style>
   <body>
     <div class="top-level-container">
     <input type="number" name="" id="" placeholder="0" />
     <div class="btn-container">
         <div class="numercis-row">
-            <button value="c">c</button>
-      <button value="plusorminus" class="op">+/-</button>
-      <button value="%" class="op">%</button>
+            <button value="c" class="tp">c</button>
+      <button value="plusorminus" class="op tp">+/-</button>
+      <button value="%" class="op tp">%</button>
             <button value="1" class="numberVal">1</button>
       <button value="2" class="numberVal">2</button>
       <button value="3" class="numberVal">3</button>

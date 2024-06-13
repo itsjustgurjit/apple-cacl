@@ -44,13 +44,18 @@ btns.forEach((btn) => {
 });
 
 function calculate(a, b, operator) {
-  if (operator === "+") {
-    return a + b;
-  } else if (operator === "-") {
-    return a - b;
-  } else if (operator === "*") {
-    return a * b;
-  } else if (operator === "/") {
-    return a / b;
+    if (operator === "+") {
+      return a + b;
+    } else if (operator === "-") {
+      return a - b;
+    } else if (operator === "*") {
+      return a * b;
+    } else if (operator === "/") {
+      return a / b;
+    } else if (operator === "%") {
+      return a % b;
+    } else {
+      throw new Error('Unsupported operator');
+    }
   }
-}
+  
