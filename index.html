@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <style>
+    body {
+      background: black;
+    }
+    .top-level-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80vh;
+        max-width: 80vw;
+    }
+    * {
+      font-size: 1.3rem;
+    }
+    .btn-container {
+        margin-top: 10px;
+        display: flex;
+        max-width: 249px;
+        box-shadow: 1px 1px 5px black;
+    }
+    .numercis-row{
+        display: flex;
+        width: 200px;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .operators-row{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    button {
+      height: 55px;
+      width: 55px;
+      color: white;
+      background-color: gray;
+      border: none;
+      border-radius: 80px;
+    }
+    input{
+        color: white;
+        background-color: black;
+        border: none;
+        text-align: end;
+        font-size: 2.8rem;
+        width: 242px;
+    }
+    input::placeholder{
+        color: white;
+    }
+    input:focus-visible{
+        border: none;
+        outline: none !important;
+    }
+    .zero{
+        width: 120px;
+        text-align: left;
+        padding-left: 20px;
+    }
+    /* Hide the spinners in WebKit browsers (Chrome, Safari, Edge) */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Hide the spinners in Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+    .op{
+        background-color: orange;
+    }
+    .isequal{
+        background-color: orange;
+    }
+  </style>
+  <body>
+    <div class="top-level-container">
+    <input type="number" name="" id="" placeholder="0" />
+    <div class="btn-container">
+        <div class="numercis-row">
+            <button value="c">c</button>
+      <button value="plusorminus" class="op">+/-</button>
+      <button value="%" class="op">%</button>
+            <button value="1" class="numberVal">1</button>
+      <button value="2" class="numberVal">2</button>
+      <button value="3" class="numberVal">3</button>
+      <button value="4" class="numberVal">4</button>
+      <button value="5" class="numberVal">5</button>
+      <button value="6" class="numberVal">6</button>
+      <button value="7" class="numberVal">7</button>
+      <button value="8" class="numberVal">8</button>
+      <button value="9" class="numberVal">9</button>
+      <button value="0" class="numberVal zero">0</button>
+      <button value="." class="numberVal">.</button>
+        </div>
+        <div class="operators-row">
+            <button value="/" class="op">/</button>
+            <button value="*" class="op">*</button>
+            <button value="-" class="op">-</button>
+            <button value="+" class="op">+</button>
+            <button value="=" class="isequal">=</button>
+        </div>
+    </div>
+</div>
+    <script src="app.js"></script>
+  </body>
+</html>
